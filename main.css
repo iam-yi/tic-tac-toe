@@ -1,14 +1,36 @@
-.game-board {
-    display: grid; 
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
-    padding: 20px;
+header {
+    font-size: 5vmin;
+    text-align: center;
 }
 
-#box {
-    
-    background-color: black;
-    border-color:blue;
-    border-style: solid;
-    border-radius: 12px;
+h1 {
+    font-size: 2vmin;
+    padding: 10px;
+    font-style: italic;
 }
+
+#gameBoard {
+        width: 500px;
+        height: 500px;
+        
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+}
+
+.sq {
+    background-color: pink;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    /* font-size: 30px;
+    text-align: center; */
+}
+
+
+   
+
+
+
+
+
+
