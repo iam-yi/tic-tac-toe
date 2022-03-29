@@ -18,27 +18,18 @@ winResult = [
  ];
 
 /*----- variables used to track the state of the game -----*/
-let boardArry = [0,1,2,3,4,5,6,7,8];
-let turn;
-let gameStatus // Win for 'W', Loose for 'L', Tie for 'T'
+let board, turn, gameStatus;  // Win for 'W', Loose for 'L', Tie for 'T'
+
+
 
 /*----- cached element references -----*/
-const msgEl= document.querySelector('h1');
-const resetBtn = document.getElementById('reset-btn');
-/*----- upload the app -----*/
+const box = document.querySelector('div');
+const text = document.querySelector('h1');
 
-function btnLocation () {
-    for (var i = 0; i < boardArry.length; i++) {
-      document.getElementById("box-btn").innerHTML += "<button>" + boardArray[i] + "</button>";
-    }
-  }
-  
-  btnLocation();
-/*----- Handle a player clicking a square -----*/
-var selection = document.getElementById("box-btn");
-selection.onclick = function() {
-  
-}
+/*----- event listensers -----*/
+documents.querySelector('section').addEventListener('click', handleMove);
+document.querySelectir('button').addEventListener('click', initialize);
+
 
 
 /*----- Handle a player clicking the replay button -----*/
